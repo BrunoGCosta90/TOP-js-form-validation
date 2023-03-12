@@ -1,0 +1,30 @@
+.form {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 12px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-inputs {
+    width: 60%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+button {
+    width: 30% !important;
+}
