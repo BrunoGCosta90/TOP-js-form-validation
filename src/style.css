@@ -19,12 +19,55 @@
     align-items: center;
 }
 
-.form-inputs {
+.form-inputs,
+.error-div {
     width: 60%;
     box-sizing: border-box;
-    margin: 10px 0;
 }
 
-button {
+.error-div {
+    margin-bottom: 20px;
+    height: 15px;
+    color: red;
+    font-size: 12px;
+}
+
+input:not(:placeholder-shown):invalid,
+select:focus:invalid {
+    border-color: red;
+    outline: red;
+}
+
+#btn {
     width: 30% !important;
+}
+
+#highfive {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+#highfive div {
+    margin-bottom: 10px;
+}
+
+.inactive-modal {
+    display: none;
+}
+
+.active-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
